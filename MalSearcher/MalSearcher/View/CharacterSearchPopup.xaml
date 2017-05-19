@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MalSearcher.ViewModel"
+             xmlns:local="clr-namespace:MalSearcher.View"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             x:Class="MalSearcher.View.CharacterSearchPopup">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation 
+      PositionIn="Center"
+      PositionOut="Center"
+      ScaleIn="1.2"
+      ScaleOut="0.8"
+      DurationIn="400"
+      DurationOut="300"
+      EasingIn="SinOut"
+      EasingOut="SinIn"
+      HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <AbsoluteLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.75"
+                     AbsoluteLayout.LayoutFlags="All" BackgroundColor="White"
+                     Orientation=" Vertical" HorizontalOptions="FillAndExpand">
+            <Label Text="Anime Search" HorizontalTextAlignment="Center" FontSize="Large"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Title: "/>
+                <Entry HorizontalOptions="FillAndExpand" Text="{Binding SearchText}"/>
+            </StackLayout>
+            <Button x:Name="SearchButton" Text="Filter"/>
+            <ListView ItemsSource="{Binding List}" ItemSelected="OnListItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name.English}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </AbsoluteLayout>
+</pages:PopupPage>

@@ -1,0 +1,18 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "HtmlAgilityPack.NetCore": "1.5.0.1",
+    "Microsoft.CSharp": "4.3.0",
+    "Microsoft.Data.Sqlite": "1.1.0",
+    "Microsoft.EntityFrameworkCore": "1.1.2",
+    "Microsoft.EntityFrameworkCore.Relational": "1.1.1",
+    "Microsoft.EntityFrameworkCore.Sqlite": "1.1.1",
+    "System.AppContext": "4.3.0",
+    "System.Collections": "4.3.0",
+    "System.Xml.ReaderWriter": "4.3.0",
+    "System.Xml.XDocument": "4.3.0"
+  },
+  "frameworks": {
+    "netstandard1.3": {}
+  }
+}

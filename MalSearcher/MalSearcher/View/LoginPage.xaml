@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MalSearcher.View"
+             xmlns:vm="clr-namespace:MalSearcher.ViewModel"
+             x:Class="MalSearcher.View.LoginPage">
+    <StackLayout VerticalOptions="Center" Orientation="Vertical">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Username: "/>
+            <Entry x:Name="UsernameEntry" HorizontalOptions="FillAndExpand" Text="{Binding Username}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Password: "/>
+            <Entry x:Name="PasswordEntry" Text="{Binding Password}" IsPassword="True" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Save Credentials? "/>
+            <Switch x:Name="SaveCredentialsSwitch"/>
+        </StackLayout>
+        <Button x:Name="LoginButton" Text="Login" Clicked="LoginButton_Clicked"/>
+    </StackLayout>
+</ContentPage>

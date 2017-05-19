@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MalSearcher.View.CrossReferencePage">
+    <ContentPage.Content>
+        <ListView 
+            ItemsSource="{Binding Roles, Mode=OneWay}"
+            IsGroupingEnabled="true"
+            GroupDisplayBinding="{Binding VoiceActorName}"
+            Header="{Binding VoiceActorName}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Anime.Title}" Detail="{Binding Character.Name.English}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

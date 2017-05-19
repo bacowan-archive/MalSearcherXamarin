@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MalSearcher.ViewModel"
+             x:Class="MalSearcher.View.MainSearchPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="list_button" Text="Anime List" Clicked="list_button_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+        <Button x:Name="search_anime_button" Text="{Binding SelectedAnimeTitle}" Clicked="search_anime_button_clicked"/>
+        <!--<Button x:Name="search_character_button" Text="{Binding SelectedCharacterTitle}"
+                Clicked="search_character_button_clicked" IsVisible="{Binding HasSelectedAnime}"/>
+        <Button x:Name="language_select_button" Text="{Binding SelectedLanguage}"
+                Clicked="language_select_button_Clicked" IsVisible="{Binding HasSelectedAnime}"/>-->
+        <StackLayout Orientation="Horizontal">
+            <Label VerticalOptions="Center">Character: </Label>
+            <Picker x:Name="character_select_spinner" HorizontalOptions="FillAndExpand"
+                    ItemsSource="{Binding CharacterList}" SelectedItem="{Binding SelectedCharacter, Mode=OneWayToSource}"
+                    IsVisible="{Binding HasSelectedAnime}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label VerticalOptions="Center">Language:</Label>
+            <Picker x:Name="language_select_spinner" HorizontalOptions="FillAndExpand"
+                    ItemsSource="{Binding LanguageList}" SelectedItem="{Binding SelectedLanguage, Mode=OneWayToSource}"
+                    IsVisible="{Binding HasSelectedAnime}"/>
+        </StackLayout>
+        <Button Text="Go" IsVisible="{Binding HasSelectedAnime}"
+                Clicked="go_button_clicked"/>
+    </StackLayout>
+</ContentPage>

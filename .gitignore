@@ -1,0 +1,10 @@
+Database/bin/
+Database/mal_searcher.db
+Database/obj/
+MalSearcher/MalSearcher.Android/bin/
+MalSearcher/MalSearcher.Android/obj/
+MalSearcher/MalSearcher.iOS/obj/
+packages/
+UnitTestApp2/bin/
+UnitTestApp2/MalProxy/backup/
+UnitTestApp2/obj/

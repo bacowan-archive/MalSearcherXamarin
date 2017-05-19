@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>cda1a9f1-7d1a-4e4f-add3-cb5c110e2dd0</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MalSearcher</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\AnimeConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\backup\AnimeConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\backup\AnimeListConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\backup\CharacterConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\AnimeSearcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\backup\IAnimeListConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\backup\UserConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\BaseConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\CharacterActorConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\CharacterAnimeConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\CharacterConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\DatabaseConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\LanguageConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\MyAnimeEntryConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\NameConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\VoiceActorConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\AnimeDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\CharacterActorDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\CharacterAnimeDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\CharacterDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\DatabaseGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\LanguageDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\MyAnimeEntryDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\NameDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\UserDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseGetters\VoiceActorDbGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Parsers\CharacterListLinkParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Parsers\CharacterListParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Retrievers\BaseWebRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\DatabaseManagerBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Interfaces\Searcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Interfaces\WebParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Interfaces\WebRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Retrievers\CredentialValidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Retrievers\MalCharacterRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Retrievers\MalListRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Parsers\SearchResultParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Parsers\UserAnimeListParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Interfaces\CharacterRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Interfaces\AnimeListRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\UserConsolidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Retrievers\MockCharacterRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\Retrievers\MockListRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\WebGetter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MalProxy\XmlUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CharacterSearchPopupViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CrossReferenceItems\CrossReferenceList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CrossReferencePageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ListPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\LoginPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainSearchPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\AnimeSearchPopupViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\CharacterSearchPopup.xaml.cs">
+      <DependentUpon>CharacterSearchPopup.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\CrossReferencePage.xaml.cs">
+      <DependentUpon>CrossReferencePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\AnimeSearchPopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ResultsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\MainSearchPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\MainSearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ResultsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\AnimeSearchPopup.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\CharacterSearchPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Model\MalProxy\Consolidators\backup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\CrossReferencePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
